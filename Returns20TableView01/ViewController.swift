@@ -17,6 +17,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     var textArray = ["渋谷","新宿","上野","東京","品川"]
     
+    var indexNumber = Int()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
    
@@ -50,6 +52,28 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 200
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        indexNumber = indexPath.row
+        
+        
+        
+        let nextVC = self.storyboard?.instantiateViewController(identifier: "next") as! NextViewController
+        
+        nextVC.image = UIImage(named: "\(imageArray[indexPath.row])")!
+        
+        nextVC.text = textArray[indexNumber]
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    
     }
     
 

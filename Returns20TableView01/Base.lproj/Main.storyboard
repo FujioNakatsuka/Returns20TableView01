@@ -50,11 +50,45 @@
                     <navigationItem key="navigationItem" id="SY4-4Q-hg8"/>
                     <connections>
                         <outlet property="tableView" destination="WPf-ND-p2p" id="meh-0R-A9b"/>
+                        <segue destination="BQv-Qc-Np0" kind="show" id="8MC-Nq-bRU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="Yh6-ut-aqB">
+            <objects>
+                <viewController storyboardIdentifier="next" id="BQv-Qc-Np0" customClass="NextViewController" customModule="Returns20TableView01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mck-WX-3E0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HmB-HF-Iea">
+                                <rect key="frame" x="20" y="117" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMx-TN-TXY">
+                                <rect key="frame" x="128" y="117" width="266" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6nQ-EJ-wEw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="259-zh-i1W"/>
+                    <connections>
+                        <outlet property="imageView" destination="HmB-HF-Iea" id="MQJ-26-Sd2"/>
+                        <outlet property="label" destination="mck-WX-3E0" id="6E0-Bp-ejA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZ8-f8-Xkl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.753623188406" y="137.94642857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0yH-td-A7A">
