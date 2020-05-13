@@ -21,6 +21,8 @@ class NextViewController: UIViewController {
 
         imageView.image = image
 //　　     label.text = text
+        //　↑　これがなぜかわかりません？
+        
         
         // Do any additional setup after loading the view.
     }
