@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" id="SY4-4Q-hg8"/>
                     <connections>
                         <outlet property="tableView" destination="WPf-ND-p2p" id="meh-0R-A9b"/>
-                        <segue destination="BQv-Qc-Np0" kind="show" id="8MC-Nq-bRU"/>
+                        <segue destination="BQv-Qc-Np0" kind="show" identifier="next" id="8MC-Nq-bRU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -83,7 +83,7 @@
                     <navigationItem key="navigationItem" id="259-zh-i1W"/>
                     <connections>
                         <outlet property="imageView" destination="HmB-HF-Iea" id="MQJ-26-Sd2"/>
-                        <outlet property="label" destination="mck-WX-3E0" id="6E0-Bp-ejA"/>
+                        <outlet property="label" destination="WMx-TN-TXY" id="feU-xw-Gh0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZ8-f8-Xkl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -43,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				8D4B861B246C9CC300E91686 /* Returns20TableView01 */,
-				8D4B861A246C9CC300E91686 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +52,7 @@
 				8D4B8619246C9CC300E91686 /* Returns20TableView01.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		8D4B861B246C9CC300E91686 /* Returns20TableView01 */ = {
@@ -66,6 +66,7 @@
 				8D4B8625246C9CC500E91686 /* Assets.xcassets */,
 				8D4B8627246C9CC500E91686 /* LaunchScreen.storyboard */,
 				8D4B862A246C9CC500E91686 /* Info.plist */,
+				8D4B861A246C9CC300E91686 /* Products */,
 			);
 			path = Returns20TableView01;
 			sourceTree = "<group>";

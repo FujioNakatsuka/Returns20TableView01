@@ -11,7 +11,7 @@ import UIKit
 class NextViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var label: UIView!
+    @IBOutlet weak var label: UILabel!
     
     var image = UIImage()
     var text = String()
@@ -20,8 +20,7 @@ class NextViewController: UIViewController {
         super.viewDidLoad()
 
         imageView.image = image
-//　　     label.text = text
-        //　↑　これがなぜかわかりません？
+        label.text = text
         
         
         // Do any additional setup after loading the view.
