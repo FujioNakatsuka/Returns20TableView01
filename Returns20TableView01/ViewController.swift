@@ -36,7 +36,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
      
         return 1
-        //セクションは一つだけなので1、複数のカテゴリに分けた表示をするならカテゴリ数を入れる
+        //ViewController上のセクションは一つだけなので1、複数のカテゴリに分けた表示をするならカテゴリ数を入れる
         
     }
     
@@ -53,7 +53,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         //newer dequeue method guarantees a cell is returned and resized properly, assuming identifier is registered
         
         let imageView = cell.viewWithTag(1) as! UIImageView
-        //Cellのタグ番号1をセル番号として保存
+        //Cellのタグ番号1をセル番号として保存？
         
         imageView.image = UIImage(named: "\(imageArray[indexPath.row])")
        //バックスラッシュを使うのはなぜですか？
@@ -80,16 +80,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         indexNumber = indexPath.row
         //indexNumberは配列内の順番（cellが持つimageView/textLabel）で良いでしょうか？
         
-        let nextVC = self.storyboard?.instantiateViewController(identifier: "next") as! NextViewController
-        //nextのidentifierを持つViewControllerつまり、NextViewController上にnextVCを生成する
+        let nextVC = self.storyboard?.instantiateViewController(identifier: "next") as!NextViewController
         
         nextVC.image = UIImage(named: "\(imageArray[indexPath.row])")!
         
         nextVC.text = textArray[indexNumber]
-        //imageとtextを指定する
         
         self.navigationController?.pushViewController(nextVC, animated: true)
-        //nextVCをViewControllerに送り込む　→ このselfはViewContoroller？NextViewControoller？のどちらですか？
     
     }
     
